@@ -2,12 +2,10 @@
 #include <string>
 #include <vector>
 
+#include "colors.h"
 #include "helper.h"
 #include "lexer.h"
 
-#define RESET "\033[0m"
-#define RED "\033[31m"
-#define GREEN "\033[32m"
 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
@@ -45,6 +43,8 @@ int main(int argc, char* argv[]) {
                   << RESET;
         return 1;
     }
+
+
 
     return 0;
 }
