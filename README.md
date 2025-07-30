@@ -1,6 +1,10 @@
 # meow lang
 
-[usage](#usage) [language](#language) [todo](#todo)
+**contents**
+- [usage](#usage)
+- [language](#language)
+- [todo](#todo)
+
 small compilator for a toy language. it will compile to C, but eventually i want it compiling to mashine code
 
 # usage
