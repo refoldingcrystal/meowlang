@@ -1,11 +1,5 @@
 #include "lexer.h"
 
-#include <cctype>
-#include <fstream>
-#include <iostream>
-#include <map>
-#include <sstream>
-
 static std::map<std::string, TokenType> keywords = {
     {"print", PRINT},
     {"input", INPUT},
@@ -15,9 +9,9 @@ static std::map<std::string, TokenType> keywords = {
     {"end", END},
     {"let", LET}};
 
-std::string genErrorMsg(const std::string& line, const std::string& msg, const int& column){
+std::string genErrorMsg(const std::string& line, const std::string& msg, const int& column) {
     std::string errorMsg = line + "\n";
-    for (int i=0; i<column; i++) errorMsg += " ";
+    for (int i = 0; i < column; i++) errorMsg += " ";
     errorMsg += "^= " + msg;
     return errorMsg;
 }

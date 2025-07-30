@@ -3,6 +3,11 @@
 
 #include <string>
 #include <vector>
+#include <cctype>
+#include <fstream>
+#include <iostream>
+#include <map>
+#include <sstream>
 
 enum TokenType {
     ENDOF,
