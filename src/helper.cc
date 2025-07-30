@@ -1,13 +1,11 @@
 #include "helper.h"
 
-#include <iostream>
-
 void printTokens(const std::vector<Token>& tokens, const std::string& filename) {
     std::cout << "tokens from file '" << filename << "':\n";
     for (const auto& token : tokens) {
         std::cout << "  [" << token.line << ":" << token.column
                   << "] \t" << getTokenTypeString(token.type);
-        if (token.type != ERROR && token.type != COMMENT && token.type != ENDOF){
+        if (token.type != ERROR && token.type != COMMENT && token.type != ENDOF) {
             std::cout << "  » " << token.text << " «";
         }
         std::cout << "\033[0m\n";

@@ -2,6 +2,8 @@
 #define HELPER_H
 
 #include <string>
+#include <iostream>
+
 
 #include "lexer.h"
 
