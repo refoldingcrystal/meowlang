@@ -1,6 +1,6 @@
 # meowlang
 let s = "meow";
-print "Hello " s "!";
+print "Hello " + s;
 
 let x = 10;
 if x == 10 then
