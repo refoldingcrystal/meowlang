@@ -1,0 +1,12 @@
+# meowlang
+let s = "meow";
+print "Hello " s "!";
+
+let x = 10;
+if x == 10 then
+    y = 5;
+end
+
+while y > 0 then
+    y = y - 1;
+end
